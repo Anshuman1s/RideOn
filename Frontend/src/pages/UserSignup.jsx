@@ -30,7 +30,7 @@ const UserSignup = () => {
         
       }
   return (
-      <div className='p-7 h-screen flex flex-col justify-between'>
+    <div className='p-7 h-screen flex flex-col justify-between'>
        <div className="">
         <img className='w-25' src={image} alt="" />
       <form onSubmit={(e)=>{
