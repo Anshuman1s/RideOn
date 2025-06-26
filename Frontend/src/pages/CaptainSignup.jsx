@@ -20,7 +20,7 @@ const CaptainSignup = () => {
             email:email,
             password:password
           })
-          console.log(UserData);
+          
           
           
           setFirstName('');
@@ -70,8 +70,8 @@ const CaptainSignup = () => {
         }}
         type="password"
         placeholder='password'/>
-        <button className='bg-[#111] text-white font-semibold mb-7 rounded px-4 py-2  w-full text-lg'>Login</button>
-        <p className='text-center' >Already Have account? <Link to={'/login'} className='text-blue-600'>Login</Link></p>
+        <button className='bg-[#111] text-white font-semibold mb-7 rounded px-4 py-2  w-full text-lg'>Submit</button>
+        <p className='text-center' >Already Have account? <Link to={'/captain-login'} className='text-blue-600'>Login</Link></p>
       </form>
        </div>
        <div className="">
