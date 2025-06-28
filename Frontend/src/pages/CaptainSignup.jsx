@@ -12,7 +12,7 @@ const CaptainSignup = () => {
           e.preventDefault();
           
           setUserData({
-            username:{
+            fullName:{
               firstName:firstName,
               lastName:lastName,
   
@@ -36,7 +36,7 @@ const CaptainSignup = () => {
       <form onSubmit={(e)=>{
         submitHandler(e)
       }} action="">
-        <h3 className='text-lg font-medium mb-2'>Enter Your Full name</h3>
+        <h3 className='text-lg font-medium mb-2'>What's our Captain Name</h3>
         <div className="flex gap-5 mb-5">
           <input className='bg-[#eeeeee] w-1/2  rounded px-4 py-2 border  text-lg placeholder:text-xm'  type="text" 
          required
@@ -55,7 +55,7 @@ const CaptainSignup = () => {
           placeholder='Lastname'/>
         
         </div>
-        <h3 className='text-base font-medium mb-2'>What's Your email?</h3>
+        <h3 className='text-base font-medium mb-2'>What's out captain email?</h3>
         <input className='bg-[#eeeeee] mb-7 rounded px-4 py-2 border w-full text-lg placeholder:text-xm'  type="email" 
          required value={email} onChange={(e)=>{
           setEmail(e.target.value);
