@@ -5,6 +5,7 @@ const connectToDb = async () => {
         await mongoose.connect(process.env.DB_CONNECT, {
         // useNewUrlParser: true,
         // useUnifiedTopology: true,
+        // anshumanadmin password -> anshuman123
         }).then(() => {
             console.log('MongoDB connection established');
         });
