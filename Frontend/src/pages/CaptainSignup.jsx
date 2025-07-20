@@ -28,11 +28,11 @@ const CaptainSignup = () => {
             },
             email:email,
             password:password,
-            vehicle:{
+            vechicle:{
               color:vehicleColor,
               plate:vehiclePlate,
-              capacity:vehicleCapacity,
-              vehicleType:vehicleType
+              capacity:Number(vehicleCapacity),
+              vechicleType:vehicleType
             }
           }
           const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/captains/register`,captainData);
@@ -40,16 +40,16 @@ const CaptainSignup = () => {
             const data = response.data;
             setCaptain(data.captain)
             localStorage.setItem('token',data.token);
-            navigate('captain-home');
+            navigate('/captain-home');
           }
           setFirstName('');
           setlastName('');
           setEmail('');
           setPassword('');
-          setVehicleColor();
-          setVehicleCapacity();
-          setVehicleType();
-          setVehiclePlate();
+          setVehicleColor('');
+          setVehicleCapacity('');
+          setVehicleType('');
+          setVehiclePlate('');
           
         }
   return (
