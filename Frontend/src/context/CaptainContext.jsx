@@ -9,7 +9,6 @@ export const CaptainContext = ({ children }) => {
     const updateCaptain=({children})=>{
         setCaptain = (captainData);
     };
-
     const value = {
         captain,
         setCaptain,
