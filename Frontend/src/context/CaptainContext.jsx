@@ -19,7 +19,6 @@ export const CaptainContext = ({ children }) => {
         updateCaptain
         
     };
-
     return (
         <CaptainDataContext.Provider value={value}>
             {children}
