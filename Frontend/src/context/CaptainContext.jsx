@@ -16,8 +16,7 @@ export const CaptainContext = ({ children }) => {
         setIsLoading,
         error,
         setError,
-        updateCaptain
-        
+        updateCaptain 
     };
     return (
         <CaptainDataContext.Provider value={value}>
