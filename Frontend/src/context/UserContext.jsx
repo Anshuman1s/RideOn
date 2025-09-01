@@ -11,6 +11,7 @@ const UserContext = ({children}) => {
     })
   return (
     <div>
+{/*         returning the value through props */}
         <UserDataContext.Provider value = {[user,setUser]}>
             {children}
         </UserDataContext.Provider>
